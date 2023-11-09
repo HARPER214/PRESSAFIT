@@ -5,7 +5,7 @@
 <script setup>
 import { useVideoStore } from "@/stores/videoStore";
 const videoStore = useVideoStore();
-console.log(videoStore);
+console.log(videoStore.videos.value);
 </script>
 
 <style scoped></style>

@@ -15,7 +15,7 @@ export const useVideoStore = defineStore("video", () => {
   const getVideos = function () {
     //GET으로 가져올거다
     axios.get(REST_VIDEO_API).then((response) => {
-      console.log(response);
+      //   console.log(response.data);
       videos.value = response.data;
     });
   };
